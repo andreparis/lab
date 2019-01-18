@@ -1,7 +1,9 @@
 import logging.config
 import os
 from flask import Flask, Blueprint
-from config import settings
+from api.conf import settings
+
+#http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/
 
 app = Flask(__name__)
 logging_conf_path = os.path.normpath(os.path.join(os.path.dirname(__file__), '../logging.conf'))
